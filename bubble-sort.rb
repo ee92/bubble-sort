@@ -1,13 +1,11 @@
 # good ol' bubble sort
 
 def bubble_sort(arr)
-  while arr != arr.sort
-    i = 0
-    while arr[i+1]
+  for j in 0..arr.length-2
+    for i in 0..arr.length-j-2
       if arr[i] > arr[i+1]
         arr[i],arr[i+1] = arr[i+1],arr[i]
       end
-      i = i + 1
     end
   end
   return arr
